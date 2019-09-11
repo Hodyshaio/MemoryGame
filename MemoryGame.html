@@ -1,0 +1,196 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="../fontawesome-free-5.9.0-web/css/all.css" rel="stylesheet">
+  <title>MemoryGame</title>
+</head>
+<style>
+    body{
+    margin:100px;
+  }
+  h1{
+    margin-left: 500px;
+    color: deeppink;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+  }
+  .wrapper{
+      perspective:500px;
+  }
+
+  .flp-card{
+    width:150px;
+    height:200px;
+    transform-style:preserve-3d;
+    position:relative;
+    transition:transform .5s linear;
+  }
+
+  .back{
+    position:absolute;
+    backface-visibility:hidden;
+    background-color:lightblue;
+    transform:rotateY(180deg);
+    width:100%;
+    height:100%;
+    font-size: 120px;
+  }
+  .front{
+    position:absolute;
+    background:lightcoral;
+    width:100%;
+    height:100%;
+    backface-visibility:hidden;
+  }
+  .flip{
+    transform:rotateY(-180deg);
+  }
+  .match{
+    transform:rotateY(-180deg);
+  }
+</style>
+<body >
+
+<h1>Memory Game</h1>
+<script type="module" src="./App.js"></script>
+<table>
+  <tr>
+    <th>
+        <div class="wrapper">
+            <div class="flp-card">
+              <div class="front"></div>
+             <div class="back"><i class='fas fa-cat'></i></div>
+           </div>
+         </div>
+    </th>
+    <th>
+        <div class="wrapper">
+            <div class="flp-card">
+              <div class="front"></div>
+             <div class="back" >  </div>
+           </div>
+         </div>
+    </th>
+    <th>
+        <div class="wrapper">
+            <div class="flp-card">
+              <div class="front"></div>
+             <div class="back" ></div>
+           </div>
+         </div>
+    </th>
+    <th>
+        <div class="wrapper">
+            <div class="flp-card">
+              <div class="front"></div>
+             <div class="back" ></div>
+           </div>
+         </div>
+    </th>
+    <th>
+        <div class="wrapper">
+            <div class="flp-card">
+              <div class="front"></div>
+             <div class="back" ></div>
+           </div>
+         </div>
+    </th>
+    <th>
+        <div class="wrapper">
+            <div class="flp-card">
+              <div class="front"></div>
+             <div class="back" ></div>
+           </div>
+         </div>
+    </th>
+    <th>
+        <div class="wrapper">
+            <div class="flp-card">
+              <div class="front"></div>
+             <div class="back" ></div>
+           </div>
+         </div>
+    </th>
+    <th>
+      <div class="wrapper">
+          <div class="flp-card">
+            <div class="front"></div>
+           <div class="back"></div>
+         </div>
+       </div>
+  </th>
+  </tr>
+  <tr>
+      <th>
+          <div class="wrapper">
+              <div class="flp-card">
+                <div class="front"></div>
+               <div class="back"></div>
+             </div>
+           </div>
+      </th>
+      <th>
+          <div class="wrapper">
+              <div class="flp-card">
+                <div class="front"></div>
+               <div class="back"></div>
+             </div>
+           </div>
+      </th>
+      <th>
+          <div class="wrapper">
+<div class="flp-card">
+                <div class="front"></div>
+               <div class="back"></div>
+             </div>
+           </div>
+      </th>
+      <th>
+          <div class="wrapper">
+              <div class="flp-card">
+                <div class="front"></div>
+               <div class="back"></div>
+             </div>
+           </div>
+      </th>
+      <th>
+          <div class="wrapper">
+              <div class="flp-card">
+                <div class="front"></div>
+               <div class="back"></div>
+             </div>
+           </div>
+      </th>
+      <th>
+          <div class="wrapper">
+              <div class="flp-card">
+                <div class="front"></div>
+              <div class="back"></div>
+             </div>
+           </div>
+      </th>
+      <th>
+          <div class="wrapper">
+              <div class="flp-card">
+                <div class="front"></div>
+               <div class="back"></div>
+             </div>
+           </div>
+      </th>
+      <th>
+        <div class="wrapper">
+            <div class="flp-card">
+              <div class="front"></div>
+             <div class="back"></div>
+           </div>
+         </div>
+    </th>
+    </tr>
+</table>
+
+</body>
+
+   
+</html>
